@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+#p01 {
+    border: 1px solid black;
+    padding: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>CONTACT US</h1>
+</header>
+
+{{template "nav-main"}}
+
+
+<article>
+  
+  <p style="text-align:center;">
+
+Thank you for your interest in healthymind.com. All email sent to us is always read, but may not be replied to. How to best reach the appropriate party at Psych Central?.
+</p>
+<br><p>1. Kindly e-mail to us on query@healthymind.com</p>
+
+<br><p><bold>2. Mailing Address</bold></p>
+
+<p id="p01"><br>
+Healthy Mind<br>
+55 Pleasant St., Suite 207<br>
+Newburyport, MA 01950</p>
+
+<p>Psych Central is affiliated with the Psych Central Community Connection, a 501(c)3 public charity</p>
+
+</article>
+
+{{template "footer"}}
+
+</div>
+
+</body>
+</html>
+
+
+
+

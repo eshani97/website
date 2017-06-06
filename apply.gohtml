@@ -1,0 +1,189 @@
+{{template "header"}}
+
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+
+{{template "nav-main"}}
+<h3>ONLINE TEST FORM</h3>
+<h5>Please select the option which applies</h5>
+
+<div>
+  <form action="/apply" method="post">
+
+    <label for="fname">1.First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">2.Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="gender">3.Gender</label>
+      <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="alcohol">4.Tee-Totler</label>
+      <select id="alcohol" name="alcohol">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="suci">5.Have you attempted suicide</label>
+      <select id="suci" name="suci">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="slow">6.I do everything sluggishly</label>
+      <select id="slow" name="slow">
+      <option value="6A">Not at all</option>
+      <option value="6B">Just a little</option>
+      <option value="6C">Somewhat</option>
+      <option value="6D">Quite A Lot</option>
+      <option value="6E">Very Much</option>
+    </select>
+
+     <label for="future">7. My future seems hopeless</label>
+      <select id="future" name="future">
+      <option value="7A">Not at all</option>
+      <option value="7B">Just a little</option>
+      <option value="7C">Somewhat</option>
+      <option value="7D">Quite A Lot</option>
+      <option value="7E">Very Much</option> </select>
+
+       <label for="read">8.It is hard to concentrate on reading</label>
+      <select id="read" name="read">
+      <option value="8A">Not at all</option>
+      <option value="8B">Just a little</option>
+      <option value="8C">Somewhat</option>
+      <option value="8D">Quite A Lot</option>
+      <option value="8E">Very Much</option> </select>
+
+       <label for="joy">9.The pleasure and joy has gone out of my life</label>
+      <select id="joy" name="joy">
+      <option value="9A">Not at all</option>
+      <option value="9B">Just a little</option>
+      <option value="9C">Somewhat</option>
+      <option value="9D">Quite A Lot</option>
+      <option value="9E">Very Much</option> </select>
+
+      <label for="decision">10.I have difficulty making decisions</label>
+      <select id="decision" name="decision">
+      <option value="10A">Not at all</option>
+      <option value="10B">Just a little</option>
+      <option value="10C">Somewhat</option>
+      <option value="10D">Quite A Lot</option>
+      <option value="10E">Very Much</option> </select>
+      
+
+      <label for="good">11. I feel depressed even when good things happen to me. </label>
+      <select id="good" name="good">
+      <option value="11A">Not at all</option>
+      <option value="11B">Just a little</option>
+      <option value="11C">Somewhat</option>
+      <option value="11D">Quite A Lot</option>
+      <option value="11E">Very Much</option> </select>
+
+
+      <label for="sleep">12.My sleep has been disturbed -- too little, too much, or broken sleep.
+    Not at all</label>
+      <select id="sleep" name="sleep">
+      <option value="12A">Not at all</option>
+      <option value="12B">Just a little</option>
+      <option value="12C">Somewhat</option>
+      <option value="12D">Quite A Lot</option>
+      <option value="12E">Very Much</option> </select>
+
+
+      <label for="diet">13.Without trying to diet, I have lost, or gained, weight.</label>
+      <select id="diet" name="diet">
+      <option value="13A">Not at all</option>
+      <option value="13B">Just a little</option>
+      <option value="13C">Somewhat</option>
+      <option value="13D">Quite A Lot</option>
+      <option value="13E">Very Much</option> </select>
+
+
+
+
+
+
+
+    <label for="add">14. Additional Info</label><br>
+     <textarea name="message" rows="10" cols="30">
+Explain your state of mind right now( 65 words).
+</textarea> 
+
+
+  
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

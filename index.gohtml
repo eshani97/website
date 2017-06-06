@@ -1,0 +1,74 @@
+{{template "header"}}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Welcome to HEALTHYMIND.com</h1>
+</header>
+
+{{template "nav-main"}}
+
+<article>
+  <h1>Your online psychoanalysis - NOW INSTANT AND EASY!</h1>
+  <br><p> TAKE THE TEST, HELP YOURSELF</p>
+
+<br><p>Our psychoanalysis test is similar to the 
+Myers Briggs (MBTI) and the Jung personality tests, 
+and is based upon an open-source set of personality 
+testing items</p>
+  <p> This test is an easy online method of diagnosing
+your mental ailments if you have any.</p></article>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+{{template "footer"}}
+
